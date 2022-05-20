@@ -60,6 +60,9 @@ resource "aws_s3_bucket_website_configuration" "s3_website_hosting" {
     suffix = "index.html"
   }
 }
+
+###########Aqui Joan!###################
+
 resource "aws_s3_object" "S3SingleObject"{
 bucket = aws_s3_bucket.nextcloud_s3_datastore.id
 key = "index.html"
